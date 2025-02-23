@@ -1,0 +1,311 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Clan Magestic | Servicios Premium de Transferencias Digitales</title>
+  <meta name="description" content="Líder en servicios profesionales de transferencias digitales. Soluciones empresariales confiables y eficientes respaldadas por años de experiencia.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#2c3e50" />
+              <stop offset="100%" style="stop-color:#3498db" />
+            </linearGradient>
+          </defs>
+          <path d="M50 5 L95 30 L95 70 L50 95 L5 70 L5 30 Z" fill="url(#logoGradient)"/>
+          <text x="50" y="60" text-anchor="middle" fill="white" font-size="24" font-family="Inter" font-weight="700">CM</text>
+        </svg>
+        <span>Clan Magestic</span>
+      </div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Servicios Premium de Transferencias Digitales</h1>
+        <p>Especialistas en soluciones financieras digitales de alta eficiencia. Respaldados por más de 1000 clientes satisfechos y un equipo de profesionales altamente capacitados.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="document.querySelector('#servicios').scrollIntoView({behavior: 'smooth'})">
+            Explorar Servicios <i class="fas fa-arrow-right"></i>
+          </button>
+          <button class="btn-secondary" onclick="document.querySelector('#beneficios').scrollIntoView({behavior: 'smooth'})">
+            Nuestros Beneficios <i class="fas fa-star"></i>
+          </button>
+        </div>
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Clientes Satisfechos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">Tasa de Éxito</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Soporte Disponible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="benefits">
+      <h2>Ventajas Exclusivas</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Proceso Verificado</h3>
+          <p>Sistema de validación multinivel que garantiza la integridad de cada operación.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-clock"></i>
+          <h3>Eficiencia Garantizada</h3>
+          <p>Optimización de procesos para resultados rápidos y confiables.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-headset"></i>
+          <h3>Atención Premium</h3>
+          <p>Equipo especializado disponible 24/7 para asistencia personalizada.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-users"></i>
+          <h3>Experiencia Comprobada</h3>
+          <p>Más de 1000 clientes satisfechos avalan nuestro servicio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <h2>Soluciones Empresariales</h2>
+      <div class="service-cards">
+        <div class="card premium">
+          <div class="card-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="card-badge">Más Solicitado</div>
+          <h3>Notificación Express</h3>
+          <p>Servicio premium con respuesta garantizada en 30 minutos</p>
+          <ul class="features">
+            <li><i class="fas fa-check"></i> Proceso optimizado y verificado</li>
+            <li><i class="fas fa-check"></i> Confirmación inmediata</li>
+            <li><i class="fas fa-check"></i> Soporte prioritario 24/7</li>
+            <li><i class="fas fa-check"></i> Panel de control en tiempo real</li>
+            <li><i class="fas fa-check"></i> Garantía de satisfacción</li>
+          </ul>
+          <div class="price">$9,000</div>
+          <button class="btn-primary" onclick="contactar('30min')">
+            Solicitar Ahora <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="card enterprise">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Impacto Completo</h3>
+          <p>Solución integral con cobertura extendida de 24 horas</p>
+          <ul class="features">
+            <li><i class="fas fa-check"></i> Proceso integral verificado</li>
+            <li><i class="fas fa-check"></i> Cobertura total extendida</li>
+            <li><i class="fas fa-check"></i> Soporte dedicado 24/7</li>
+            <li><i class="fas fa-check"></i> Informes detallados</li>
+            <li><i class="fas fa-check"></i> Beneficios adicionales exclusivos</li>
+          </ul>
+          <div class="price">$10,000</div>
+          <button class="btn-primary" onclick="contactar('24h')">
+            Solicitar Ahora <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="process">
+      <h2>Nuestro Proceso</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Contacto Inicial</h3>
+          <p>Complete el formulario con sus requerimientos específicos.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Evaluación</h3>
+          <p>Nuestro equipo analiza su solicitud y prepara una solución personalizada.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Implementación</h3>
+          <p>Activación inmediata del servicio seleccionado.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Seguimiento</h3>
+          <p>Monitoreo continuo y soporte dedicado durante todo el proceso.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonios">
+      <h2>Testimonios de Clientes</h2>
+      <div class="testimonial-grid">
+        <!-- Testimonials will be loaded dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <section class="comparison">
+      <h2>Comparación de Servicios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Características</th>
+            <th>Notificación Express</th>
+            <th>Impacto Completo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tiempo de Respuesta</td>
+            <td>30 minutos</td>
+            <td>24 horas</td>
+          </tr>
+          <tr>
+            <td>Soporte Dedicado</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Panel de Control</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Informes Detallados</td>
+            <td>Básicos</td>
+            <td>Avanzados</td>
+          </tr>
+          <tr>
+            <td>Precio</td>
+            <td>$9,000</td>
+            <td>$10,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            ¿Cómo funciona el proceso de implementación?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Nuestro proceso es simple y eficiente. Una vez que recibimos su solicitud, nuestro equipo técnico prepara la implementación y le proporciona acceso al panel de control en cuestión de minutos.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contacto Profesional</h2>
+      <div class="contact-container">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="serviceSelect">Servicio de interés</label>
+            <select id="serviceSelect" required>
+              <option value="">Seleccionar servicio</option>
+              <option value="30min">Notificación Express (30 min)</option>
+              <option value="24h">Impacto Completo (24h)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Detalles de su solicitud" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">
+            Enviar Consulta <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Clan Magestic</h4>
+        <p>Líderes en soluciones financieras digitales con años de experiencia en el mercado.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Contacto Directo</h4>
+        <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2818d8c968381968da2818e838c8f83858791968b81cc818d8f">[email&#160;protected]</a></p>
+        <p><i class="fas fa-clock"></i> Disponibilidad: 24/7</p>
+        <p><i class="fas fa-map-marker-alt"></i> Operaciones en toda América Latina</p>
+      </div>
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-badges">
+      <div class="badge">
+        <i class="fas fa-lock"></i>
+        <span>Seguridad Garantizada</span>
+      </div>
+      <div class="badge">
+        <i class="fas fa-star"></i>
+        <span>Servicio Premium</span>
+      </div>
+      <div class="badge">
+        <i class="fas fa-clock"></i>
+        <span>Soporte 24/7</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Clan Magestic. Todos los derechos reservados.</p>
+      <p>Términos y Condiciones | Política de Privacidad</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
